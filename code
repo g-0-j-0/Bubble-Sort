@@ -1,0 +1,11 @@
+def bubble(kaisen):
+    total= len(kaisen)-1
+    sorted= False
+    while not sorted:
+        sorted = True
+        for i in range(0,total):
+            if kaisen[i]>kaisen[i+1]:
+                sorted=False
+                kaisen[i],kaisen[i+1]=kaisen[i+1],kaisen[i]
+    return kaisen
+print(bubble([4,6,6,8,4,2,3,9,78,34,2,5,6,454,2]))
